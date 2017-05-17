@@ -1,5 +1,6 @@
 virtualenv env
 call env/Scripts/activate.bat
 pip install requirements
-call pytest deep_learning/deep_learning/test_mnist.py
+mkdir results
+call pytest --junitxml=results/unit_test_err.log deep_learning/deep_learning/test_mnist.py
 call env/Scripts/deactivate
