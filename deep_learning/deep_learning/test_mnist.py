@@ -6,4 +6,5 @@ def test_mytest():
     
 def test_simple_pass():
     time.sleep(1)
+    assert 3==4
     pass
