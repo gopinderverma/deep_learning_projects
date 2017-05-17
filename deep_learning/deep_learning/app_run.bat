@@ -1,5 +1,5 @@
 virtualenv env
-call activate
+call env/Scripts/activate.bat
 pip install requirements
 call pytest deep_learning/deep_learning/test_mnist.py
-call deactivate
+call env/Scripts/deactivate
